@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #ffe17c;
+  --color-brand-charcoal: #171e19;
+  --color-brand-sage: #b7c6c2;
+  --color-brand-dark-gray: #272727;
+
+  --shadow-neo-sm: 4px 4px 0px 0px #000;
+  --shadow-neo-md: 8px 8px 0px 0px #000;
+  --shadow-neo-lg: 12px 12px 0px 0px #000;
+
+  --font-cabinet: "Cabinet Grotesk", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
+
+  --radius-neo: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-family: var(--font-satoshi);
+    font-weight: 500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-cabinet);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .border-neo {
+    border: 2px solid black;
+  }
+
+  .shadow-neo-sm {
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+
+  .shadow-neo-md {
+    box-shadow: 8px 8px 0px 0px #000;
+  }
+
+  .shadow-neo-lg {
+    box-shadow: 12px 12px 0px 0px #000;
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px black;
+  }
+}
