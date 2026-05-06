@@ -1,64 +1,75 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { X, Check } from "lucide-react";
+import { MoveRight, Compass, Layers, Smartphone } from "lucide-react";
 
 export const ProblemSolution = () => {
   return (
-    <section className="py-32 px-6 bg-white border-t-2 border-black">
+    <section className="py-32 px-6 bg-white border-t-2 border-black overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Problem Card */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          {/* Left: Heading */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-[#f4f4f4] border-2 border-dashed border-gray-400 p-12 rounded-3xl opacity-80"
+            className="space-y-8"
           >
-            <div className="w-16 h-16 bg-white border-2 border-dashed border-gray-400 flex items-center justify-center mb-8">
-              <X className="text-gray-400" size={32} />
+            <div className="inline-block bg-brand-yellow border-neo px-4 py-1 rounded-full text-xs font-black uppercase">
+              PHILOSOPHY
             </div>
-            <h3 className="text-4xl font-black font-cabinet uppercase mb-8 text-gray-500">The Problem</h3>
-            <ul className="space-y-4">
-              {[
-                "Confusing user journeys and high drop-off rates",
-                "Inconsistent visual branding across platforms",
-                "Terrible accessibility and mobile responsiveness",
-                "Lack of emotional connection with the user",
-              ].map((item, i) => (
-                <li key={i} className="flex gap-4 items-start text-gray-500 font-medium text-lg">
-                  <X className="shrink-0 mt-1" size={20} />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <h2 className="text-6xl md:text-8xl font-black font-cabinet leading-[0.9] uppercase">
+              DESIGN <br />
+              <span className="text-transparent text-stroke-2">APPROACH</span>
+            </h2>
+            <p className="text-xl font-bold max-w-lg leading-relaxed">
+              Rooted in clarity, usability, and structure. Drawing from architectural thinking to design 
+              digital spaces that feel natural and intuitive.
+            </p>
           </motion.div>
 
-          {/* Solution Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-brand-yellow border-neo p-12 rounded-3xl shadow-neo-lg"
-          >
-            <div className="w-16 h-16 bg-black border-neo flex items-center justify-center mb-8">
-              <Check className="text-brand-yellow" size={32} />
-            </div>
-            <h3 className="text-4xl font-black font-cabinet uppercase mb-8">The Solution</h3>
-            <ul className="space-y-4">
-              {[
-                "Data-driven UX audits and user flow optimization",
-                "Unified, scalable design systems (Atomic Design)",
-                "Accessibility-first (WCAG 2.1) visual design",
-                "High-fidelity interactive prototyping & testing",
-              ].map((item, i) => (
-                <li key={i} className="flex gap-4 items-start font-black text-lg">
-                  <Check className="shrink-0 mt-1" size={20} />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+          {/* Right: Principles Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Spatial Logic",
+                desc: "Focusing on how users move through digital environments with logical flow.",
+                icon: <Compass size={32} />,
+                color: "bg-brand-sage",
+              },
+              {
+                title: "Atomic Systems",
+                desc: "Designing scalable systems rather than isolated screens for consistency.",
+                icon: <Layers size={32} />,
+                color: "bg-brand-yellow",
+              },
+              {
+                title: "Human Centered",
+                desc: "Ensuring smooth navigation and intuitive interactions for every user.",
+                icon: <Smartphone size={32} />,
+                color: "bg-brand-dark-gray text-white",
+              },
+              {
+                title: "Visual Identity",
+                desc: "Maintaining strong aesthetics while never sacrificing core functionality.",
+                icon: <MoveRight size={32} />,
+                color: "bg-white",
+              },
+            ].map((p, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className={`${p.color} border-neo p-8 rounded-3xl shadow-neo-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all`}
+              >
+                <div className="mb-6">{p.icon}</div>
+                <h3 className="text-2xl font-black font-cabinet uppercase mb-2">{p.title}</h3>
+                <p className="font-bold text-sm leading-relaxed opacity-70">{p.desc}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

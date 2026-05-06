@@ -2,44 +2,44 @@
 
 import { motion } from "framer-motion";
 import {
-  Code2,
-  Server,
   BrainCircuit,
   Database,
-  Wrench,
   Zap,
+  Layout,
+  Search,
+  Users
 } from "lucide-react";
 
 const skills = [
   {
-    category: "User Research",
-    icon: BrainCircuit,
-    items: ["User Interviews", "Personas", "A/B Testing", "Heuristic Evaluation"],
-  },
-  {
-    category: "Visual Design",
-    icon: Code2,
-    items: ["Branding", "Typography", "Color Theory", "Illustration"],
+    category: "Mobile & Web UI",
+    icon: Layout,
+    items: ["Responsive Design", "App Interfaces", "Mobile-First", "Grid Systems"],
   },
   {
     category: "Interaction",
     icon: Zap,
-    items: ["Micro-interactions", "Prototyping", "Motion Design", "Framer"],
+    items: ["Wireframing", "Prototyping", "Micro-interactions", "User Flows"],
   },
   {
-    category: "Strategy",
+    category: "Research",
+    icon: Search,
+    items: ["User Interviews", "Usability Testing", "Heatmaps", "Audits"],
+  },
+  {
+    category: "Architecture",
+    icon: BrainCircuit,
+    items: ["Information Hierarchy", "Sitemaps", "Spatial Logic", "Task Flows"],
+  },
+  {
+    category: "Design Systems",
     icon: Database,
-    items: ["Information Architecture", "User Flows", "Wireframing", "Product Strategy"],
-  },
-  {
-    category: "Tools",
-    icon: Wrench,
-    items: ["Figma", "Adobe Creative Suite", "Sketch", "Webflow", "Storybook"],
+    items: ["Atomic Design", "Tokenization", "Documentation", "Scalability"],
   },
   {
     category: "Collaboration",
-    icon: Server,
-    items: ["Design Ops", "Developer Handoff", "Agile", "Miro"],
+    icon: Users,
+    items: ["Dev Handoff", "Storybook", "Agile Workflow", "Feedback Loops"],
   },
 ];
 
@@ -52,11 +52,11 @@ export const Skills = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 text-center">
           <h2 className="text-5xl md:text-7xl uppercase mb-6">
-            Technical Arsenal
+            What I Do
           </h2>
 
           <p className="text-xl font-bold max-w-2xl mx-auto uppercase">
-            A comprehensive stack built for speed, scalability, and intelligence.
+            Designing systems that bridge the gap between architectural logic and digital interaction.
           </p>
         </div>
 

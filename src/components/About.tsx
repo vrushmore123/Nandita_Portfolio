@@ -25,16 +25,25 @@ export const About = () => {
           {/* Right: Content */}
           <div className="space-y-8">
             <h2 className="text-5xl md:text-7xl uppercase leading-none">
-              Crafting Digital <br />
+              Spatial & Digital <br />
               <span className="bg-brand-yellow px-2 border-neo shadow-neo-sm">Experiences</span>
             </h2>
             <div className="space-y-6 text-xl leading-relaxed">
               <p>
-                I'm a Product Designer focused on building high-conversion interfaces and premium visual identities. 
-                My approach combines rigorous user research with bold, neo-brutalist aesthetics to create products that are both functional and memorable.
+                I am a UI/UX Designer with a background in **Architecture**, bringing a structured,
+                spatial, and human-centered approach to digital design. My work focuses on creating
+                intuitive, visually balanced, and user-friendly experiences across web and mobile platforms.
               </p>
               <p>
-                I believe great design is invisible until it's disruptive. Whether I'm building a scalable design system in Figma or conducting usability tests on a high-fidelity prototype, I ensure every pixel serves a purpose.
+                With a strong foundation in design principles such as hierarchy, proportion, and flow, I 
+                translate complex ideas into clear and engaging interfaces. My architectural mindset 
+                allows me to think beyond screens—designing experiences that guide users seamlessly 
+                through interaction journeys.
+              </p>
+              <p>
+                From research and wireframing to final UI execution, I ensure consistency, usability, 
+                and scalability across systems, designing solutions that maintain both functionality 
+                and a strong visual identity.
               </p>
             </div>
 

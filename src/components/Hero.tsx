@@ -27,9 +27,9 @@ export const Hero = () => {
             transition={{ delay: 0.1 }}
             className="text-6xl md:text-8xl font-black font-cabinet leading-[0.9] uppercase"
           >
-            I DESIGN <br />
-            <span className="text-transparent text-stroke-2">HIGH END</span> <br />
-            EXPERIENCES
+            NANDITA TOLE <br />
+            <span className="text-transparent text-stroke-2">UI/UX</span> <br />
+            DESIGNER
           </motion.h1>
 
           <motion.p
@@ -38,8 +38,8 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl font-bold max-w-xl leading-snug"
           >
-            Specializing in Visual Identity, Interaction Design, and Design Systems. 
-            Merging deep user research with disruptive aesthetics to build products that stick.
+            An Architect turned Digital Designer. I apply spatial logic and human-centered principles 
+            to build intuitive interfaces and scalable design systems for web and mobile.
           </motion.p>
 
           <motion.div

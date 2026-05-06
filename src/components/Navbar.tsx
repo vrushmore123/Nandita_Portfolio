@@ -40,7 +40,7 @@ export const Navbar = () => {
             <Zap className="text-brand-yellow fill-brand-yellow" size={24} />
           </div>
           <span className="font-cabinet font-extrabold text-2xl tracking-tighter uppercase">
-            Nandita
+            Nandita Tole
           </span>
         </Link>
 
