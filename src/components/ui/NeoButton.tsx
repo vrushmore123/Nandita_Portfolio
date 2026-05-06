@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-interface NeoButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface NeoButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onDrag' | 'onDragStart' | 'onDragEnd' | 'onAnimationStart'> {
   variant?: "primary" | "secondary" | "white";
   size?: "sm" | "md" | "lg";
 }

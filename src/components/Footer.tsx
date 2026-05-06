@@ -23,7 +23,7 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 text-lg max-w-sm font-medium">
-              Architecting the next generation of intelligent web applications with Neo-Brutalist precision.
+              Crafting high-end digital interfaces and human-centric product experiences with Neo-Brutalist precision.
             </p>
             <div className="flex gap-4">
               {[
@@ -55,12 +55,12 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-xl font-black uppercase">Technical</h4>
+            <h4 className="text-xl font-black uppercase">Expertise</h4>
             <ul className="space-y-4 text-gray-400 font-bold uppercase text-sm">
-              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">AI Automation</span></li>
-              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">Web Scraping</span></li>
-              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">SaaS Architecture</span></li>
-              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">Open Source</span></li>
+              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">Visual Identity</span></li>
+              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">UX Strategy</span></li>
+              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">Design Systems</span></li>
+              <li><span className="hover:text-brand-yellow transition-colors cursor-pointer">Interactive Ops</span></li>
             </ul>
           </div>
         </div>

@@ -1,7 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Server, BrainCircuit, Database, Cpu, Wrench } from "lucide-react";
+import {
+  Code2,
+  Server,
+  BrainCircuit,
+  Database,
+  Cpu,
+  Wrench,
+  Zap
+} from "lucide-react";
 
 const skills = [
   {
