@@ -59,9 +59,11 @@ export const Navbar = () => {
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
-          <NeoButton variant="primary" size="sm" className="hidden sm:block">
-            RESUME
-          </NeoButton>
+          <a href="/Nandita_Tole_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <NeoButton variant="primary" size="sm" className="hidden sm:block">
+              RESUME
+            </NeoButton>
+          </a>
           <button
             className="md:hidden p-2 border-neo bg-white shadow-neo-sm"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -91,9 +93,11 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <NeoButton variant="primary" className="w-full mt-4">
-                RESUME
-              </NeoButton>
+              <a href="/Nandita_Tole_Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full mt-4">
+                <NeoButton variant="primary" className="w-full">
+                  RESUME
+                </NeoButton>
+              </a>
             </div>
           </motion.div>
         )}

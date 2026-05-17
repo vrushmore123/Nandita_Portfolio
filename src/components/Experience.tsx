@@ -5,20 +5,26 @@ import { Lightbulb, Code2, Rocket } from "lucide-react";
 
 const steps = [
   {
-    title: "Empathize",
-    description: "Understanding user pain points through deep research, interviews, and data analysis.",
+    title: "DISCOVER",
+    description: "Understanding the problem before designing the solution.I analyze user behavior, business goals, and product constraints to identify real pain points. This stage focuses on clarity—defining what needs to be solved and why it matters.",
     icon: <Lightbulb className="text-brand-sage" size={32} />,
     glow: "border-brand-sage",
   },
   {
-    title: "Prototype",
-    description: "Transforming insights into high-fidelity interactive prototypes and design systems.",
+    title: "STRUCTURE",
+    description: "Designing the foundation through logic and flow.Using principles of hierarchy, spatial thinking, and information architecture, I map user journeys, flows, and system structure to create intuitive and scalable experiences.",
     icon: <Code2 className="text-brand-yellow" size={32} />,
     glow: "border-brand-yellow",
   },
   {
-    title: "Validate",
-    description: "Iterative testing with real users to refine the experience and ensure pixel perfection.",
+    title: "DESIGN",
+    description: "Bringing ideas to life through interfaces and interaction.I translate concepts into wireframes and high-fidelity UI, focusing on usability, consistency, and visual clarity while building strong design systems.",
+    icon: <Rocket className="text-white" size={32} />,
+    glow: "border-white",
+  },
+  {
+    title: "VALIDATE",
+    description: "Refining through feedback and real-world use.Through testing, iteration, and collaboration with developers, I ensure the final product is not just visually strong, but functional, efficient, and ready for scale.",
     icon: <Rocket className="text-white" size={32} />,
     glow: "border-white",
   },
@@ -51,7 +57,7 @@ export const Experience = () => {
               </div>
               <h3 className="text-3xl font-black font-cabinet uppercase mb-4">{step.title}</h3>
               <p className="text-gray-400 font-medium leading-relaxed">{step.description}</p>
-              
+
               <div className="mt-8 text-brand-yellow font-black font-cabinet text-6xl opacity-10">
                 0{i + 1}
               </div>

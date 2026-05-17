@@ -23,7 +23,7 @@ export const ProblemSolution = () => {
               <span className="text-transparent text-stroke-2">APPROACH</span>
             </h2>
             <p className="text-xl font-bold max-w-lg leading-relaxed">
-              Rooted in clarity, usability, and structure. Drawing from architectural thinking to design 
+              Rooted in clarity, usability, and structure. Drawing from architectural thinking to design
               digital spaces that feel natural and intuitive.
             </p>
           </motion.div>
@@ -33,25 +33,25 @@ export const ProblemSolution = () => {
             {[
               {
                 title: "Spatial Logic",
-                desc: "Focusing on how users move through digital environments with logical flow.",
+                desc: "Designing user principels of flow,hiearchy and movement inspired by architecture",
                 icon: <Compass size={32} />,
                 color: "bg-brand-sage",
               },
               {
                 title: "Atomic Systems",
-                desc: "Designing scalable systems rather than isolated screens for consistency.",
+                desc: "Building scalable design systems that ensure consistency across products and teams.",
                 icon: <Layers size={32} />,
                 color: "bg-brand-yellow",
               },
               {
                 title: "Human Centered",
-                desc: "Ensuring smooth navigation and intuitive interactions for every user.",
+                desc: "Improving usability through research, testing, and real user behavior insights.",
                 icon: <Smartphone size={32} />,
                 color: "bg-brand-dark-gray text-white",
               },
               {
                 title: "Visual Identity",
-                desc: "Maintaining strong aesthetics while never sacrificing core functionality.",
+                desc: "Crafting clean, functional interfaces that balance aesthetics with usability.",
                 icon: <MoveRight size={32} />,
                 color: "bg-white",
               },

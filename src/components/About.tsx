@@ -11,8 +11,8 @@ export const About = () => {
           {/* Left: Visuals */}
           <div className="relative">
             <div className="relative z-10 bg-brand-yellow border-neo p-4 shadow-neo-lg rotate-3 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 
+              <img
+                src="./portfolio_Image.png"
                 alt="Developer Profile"
                 className="w-full grayscale hover:grayscale-0 transition-all duration-500"
               />
@@ -35,14 +35,14 @@ export const About = () => {
                 intuitive, visually balanced, and user-friendly experiences across web and mobile platforms.
               </p>
               <p>
-                With a strong foundation in design principles such as hierarchy, proportion, and flow, I 
-                translate complex ideas into clear and engaging interfaces. My architectural mindset 
-                allows me to think beyond screens—designing experiences that guide users seamlessly 
+                With a strong foundation in design principles such as hierarchy, proportion, and flow, I
+                translate complex ideas into clear and engaging interfaces. My architectural mindset
+                allows me to think beyond screens—designing experiences that guide users seamlessly
                 through interaction journeys.
               </p>
               <p>
-                From research and wireframing to final UI execution, I ensure consistency, usability, 
-                and scalability across systems, designing solutions that maintain both functionality 
+                From research and wireframing to final UI execution, I ensure consistency, usability,
+                and scalability across systems, designing solutions that maintain both functionality
                 and a strong visual identity.
               </p>
             </div>
@@ -51,9 +51,9 @@ export const About = () => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8">
               {[
                 { label: "Exp.", value: "2+ Yrs" },
-                { label: "Certs", value: "10+" },
-                { label: "Projs", value: "25+" },
-                { label: "Client", value: "15+" },
+                { label: "Certs", value: "5+" },
+                { label: "Projs", value: "10+" },
+                { label: "Client", value: "10+" },
               ].map((stat, i) => (
                 <motion.div
                   key={i}

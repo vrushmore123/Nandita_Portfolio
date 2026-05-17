@@ -19,22 +19,27 @@ const skills = [
   {
     category: "Interaction",
     icon: Zap,
-    items: ["Wireframing", "Prototyping", "Micro-interactions", "User Flows"],
+    items: ["Wireframing", "Prototyping", "User Flows", "Micro-interactions"],
   },
   {
     category: "Research",
     icon: Search,
-    items: ["User Interviews", "Usability Testing", "Heatmaps", "Audits"],
+    items: ["User Interviews", "Usability Testing", "UX Audits", "Behavior Analysis"],
   },
   {
     category: "Architecture",
     icon: BrainCircuit,
-    items: ["Information Hierarchy", "Sitemaps", "Spatial Logic", "Task Flows"],
+    items: ["Information Architecture", "Sitemaps", "Task Flows", "Spatial Thinking"],
   },
   {
-    category: "Design Systems",
-    icon: Database,
-    items: ["Atomic Design", "Tokenization", "Documentation", "Scalability"],
+    category: "Tools",
+    icon: Users,
+    items: [
+      "Figma",
+      "Adobe XD",
+      "Framer",
+      "Photoshop",
+    ],
   },
   {
     category: "Collaboration",

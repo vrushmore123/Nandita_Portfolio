@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Globe, ExternalLink, Bot, Shield, Zap } from "lucide-react";
 import { NeoButton } from "./ui/NeoButton";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
   {
     title: "Nexus System",
     description: "A comprehensive design system built for multi-platform enterprise scalability.",
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=800",
     tags: ["Design Ops", "Figma"],
     link: "#",
     github: "#",
@@ -55,23 +56,29 @@ export const Projects = () => {
           <NeoButton variant="secondary" size="lg">VIEW ALL GITHUB</NeoButton>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
           {projects.map((project, i) => (
             <motion.div
               key={i}
-              whileHover={{ y: -10, rotate: 1 }}
-              className={`relative bg-white border-neo rounded-3xl overflow-hidden shadow-neo-md group ${
-                project.size === "large" ? "md:col-span-2 lg:col-span-2 lg:row-span-2" : ""
-              }`}
+              whileHover={{ y: -10 }}
+              className={cn(
+                "relative bg-white border-neo rounded-3xl overflow-hidden shadow-neo-md group flex flex-col",
+                project.size === "large" ? "md:col-span-2 lg:col-span-8 lg:row-span-2" :
+                  project.size === "medium" ? "md:col-span-2 lg:col-span-12 lg:mt-8" :
+                    "md:col-span-1 lg:col-span-4"
+              )}
             >
               {/* Project Image */}
-              <div className="relative h-64 md:h-80 overflow-hidden border-b-2 border-black">
+              <div className={cn(
+                "relative overflow-hidden border-b-2 border-black bg-gray-100",
+                project.size === "large" ? "h-80 md:h-[500px]" : "h-64 md:h-80"
+              )}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                   <a href={project.github} className="p-4 bg-white border-neo shadow-neo-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                     <Globe size={24} />
                   </a>
@@ -82,16 +89,18 @@ export const Projects = () => {
               </div>
 
               {/* Project Info */}
-              <div className="p-8">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, j) => (
-                    <span key={j} className="px-2 py-1 bg-brand-sage/20 border-neo text-[10px] font-black uppercase">
-                      {tag}
-                    </span>
-                  ))}
+              <div className="p-8 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, j) => (
+                      <span key={j} className="px-2 py-1 bg-brand-sage/20 border-neo text-[10px] font-black uppercase">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="text-3xl font-black font-cabinet uppercase mb-4">{project.title}</h3>
+                  <p className="text-gray-600 font-medium mb-6 line-clamp-2 md:line-clamp-none">{project.description}</p>
                 </div>
-                <h3 className="text-3xl font-black font-cabinet uppercase mb-4">{project.title}</h3>
-                <p className="text-gray-600 font-medium mb-6">{project.description}</p>
                 <div className="flex gap-4">
                   <NeoButton variant="primary" size="sm">LIVE DEMO</NeoButton>
                 </div>
